@@ -1,6 +1,6 @@
 FROM cimg/node:14.0.0
 
-LABEL author="Ryan Pedersen"
+LABEL author="SRI AKHIL VARMA ALLURI"
 
 WORKDIR /demo-app
 
