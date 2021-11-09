@@ -32,3 +32,13 @@ jobs:
             docker build -t your-image:$TAG .
 orbs:
   node: circleci/node@4.0.0
+  snyk: snyk/snyk@x.y.z
+jobs:
+  build:
+    docker:
+      - image: 'cimg/node:lts'
+    steps:
+      - checkout
+      - run: npm ci
+      - snyk/scan
+workflows: null
