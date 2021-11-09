@@ -9,5 +9,4 @@ jobs:
       - checkout
       - run: npm ci
       - snyk/scan
-          token-variable: SNYK_TOKEN
 workflows: null
